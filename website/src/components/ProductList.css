@@ -1,0 +1,55 @@
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin:40px 0 80px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:18px 0 8px;
+    font-size:22px;
+    color:#222;
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
